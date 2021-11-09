@@ -1,1 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Pablo Olmos</title>
+	<link rel="stylesheet" href="css/main.css"/>
+	<link rel="script" href="js/main.js">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+<body>
+	<script src="js/main.js"></script>
+	<header class="header" id="home">
+		<div>
+			<h1>Pablo Olmos</h1><br><p>Desarrollador Frontend.</p><p class="bar">|</p>
+		</div>
+	</header>
+	<label for="navbar-toggle-input" id="navbar-toggle">
+		<i class="fas fa-bars"></i>
+	</label>
+	<input type="checkbox" name="navbar-toggle-input" id="navbar-toggle-input">
+	<nav class="navbar">
+		<ul>
+			<li class="home"><a href="#home">INICIO</a><i class="fas fa-home"></i></li>
+			<li class="about"><a href="#about">ACERCA</a><i class="fas fa-user"></i></li>
+			<li class="portfolio"><a href="#portfolio">PORTAFOLIO</a><i class="fas fa-address-book"></i></li>
+			<li class="contact"><a href="#contact">CONTACTO</a><i class="fas fa-envelope-open-text"></i></li>
+		</ul>
+	</nav>
+	<div class="about-container" id="about">
+		<h2 class="about-title">Acerca de mí</h2>
+		<div class="about-card">
+			<div class="profile">
+				<img src="img/me.jpg">
+				<a href='https://github.com/PualMark' target='_blank'><i class="fab fa-github"></i></a>
+			</div>
+			<div class="about-text">
+				<p class="about-text-header">Pablo Olmos</p>
+				<content>¡Qué tal! Soy Pablo Olmos, desarrollador frontend y diseñador web. He estado en algunos proyectos dirigidos al diseño de vistas, así como la creación de sitios web. Actualmente me dedico a crear plantillas, conceptos y diseños, así como a la música tocando el piano.<br>Tengo experiencia con html5, css3, typescript y el framework, Angular.</content>
+			</div>
+		</div>
+		<div class="services-container">
+			<h3>Servicios</h3>
+			<ul>
+				<li><i class="fas fa-address-card"></i>Desarrollo web</li>
+				<li><i class="fas fa-server"></i>Hosting en la red</li>
+				<li><i class="fas fa-wrench"></i>Mantenimiento</li>
+			</ul>
+		</div>
+	</div>
+	<div class="portfolio-container" id="portfolio">
+		<h2>Portafolio</h2>
+		<div id="project-card"></div>
+		<script src="js/portfolio.js"></script>
+		
+		<h3>Habilidades</h3>
+		<figure class="skillset-container">
+			<div class="skill">
+				<img src="img/skillset/html.png">
+				<p>HTML</p>
+			</div>
+			<div class="skill">
+				<img src="img/skillset/css.png">
+				<p>CSS</p>
+			</div>
+			<div class="skill">
+				<img src="img/skillset/js.png">
+				<p>Javascript</p>
+			</div>
+			<div class="skill">
+				<img src="img/skillset/angular.png">
+				<p>Angular</p>
+			</div>
+			<div class="skill">
+				<img src="img/skillset/ts.png">
+				<p>Typescript</p>
+			</div>
+		</figure>
+	</div>
+	<div class="contact-container" id="contact">
+		<h2>Contacto</h2>
+		<section class="form-container">
+  			<div class="email-container">
+	    		<form action="https://formspree.io/f/xrgrvaag" method="POST" id="my-form">
 
+      				<div class="form-group">
+        				<label for="firstName"> Nombre Completo </label>
+        				<input type="text" id="firstName" name="firstName">
+      				</div>
+
+      				<div class="form-group">
+        				<label for="email">E-mail</label>
+        				<input type="email" id="email" name="email">
+      				</div>
+
+      				<div class="form-group">
+        				<label for="massage">Mensaje</label>
+        				<textarea name="massage" id="massage" cols="20" rows="10"></textarea>
+      				</div>
+
+      				<button type="submit">Enviar</button>
+    			</form>
+  			</div>
+  			<div id="status"></div>
+		</section>
+		<script src="./js/main.js"></script>
+	</div>
+</body>
+</html>

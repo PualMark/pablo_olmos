@@ -4,19 +4,19 @@ const projectData = [
 	{
 		image:'./img/portfolio/p01.png',
 		title:'Anax Olmos',
-		web_link:'https://pualmark.github.io/anax_template/#home',
+		web_link:'https://pualmark.github.io/anax_template',
 		git_link:'https://github.com/PualMark/anax_template'
 	},
 	{
 		image:'./img/portfolio/p01.png',
 		title:'Anax Olmos',
-		web_link:'https://pualmark.github.io/anax_template/#home',
+		web_link:'https://pualmark.github.io/anax_template',
 		git_link:'https://github.com/PualMark/anax_template'
 	},
 	{
 		image:'./img/portfolio/p01.png',
 		title:'Anax Olmos',
-		web_link:'https://pualmark.github.io/anax_template/#home',
+		web_link:'https://pualmark.github.io/anax_template',
 		git_link:'https://github.com/PualMark/anax_template'
 	},
 ]

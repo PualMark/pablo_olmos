@@ -7,16 +7,35 @@
         location.hash = "#home";
     }
 
+//Smooth Scroll
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 300, function(){
+
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
 
 //Email
 window.addEventListener("DOMContentLoaded", function () {
-  // get the form elements defined in your form HTML above
 
   var form = document.getElementById("my-form");
-  // var button = document.getElementById("my-form-button");
   var status = document.getElementById("status");
 
-  // Success and Error functions for after the form is submitted
 
   function success() {
     form.reset();
@@ -29,8 +48,6 @@ window.addEventListener("DOMContentLoaded", function () {
     status.innerHTML = "We are full! :(";
   }
 
-  // handle the form submission event
-
   form.addEventListener("submit", function (ev) {
     ev.preventDefault();
     var data = new FormData(form);
@@ -38,7 +55,6 @@ window.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// helper function for sending an AJAX request
 
 function ajax(method, url, data, success, error) {
   var xhr = new XMLHttpRequest();

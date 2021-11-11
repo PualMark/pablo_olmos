@@ -511,7 +511,6 @@
 
 	/* SKILLSET SECTION */
 		.skillset-container{
-			position: relative;
 			margin-top: 15px;
 			justify-content: center;
 			display: grid;
@@ -969,11 +968,22 @@
 
 	#project-card{
 		width: 100%;
+		height: auto;
 		margin-top: 20px;
 		display: grid;
 	    justify-content: space-around;
     	grid-template-columns: repeat(auto-fit, 30%);
     }
+
+/* SKILLSET SECTION */
+	.skillset-container{
+		grid-template-columns: repeat(auto-fit, 170px);
+	}
+	.skill{
+		width: 170px;
+		height: 170px;
+		font-size: 2vw;
+	}
 
 /* CONTACT SECTION */
 	.contact-container{
@@ -989,6 +999,17 @@
 
 	.form-container:hover{
 		width: 80%;
+	}
+
+	.form-group {
+	  	width: 100%;
+	  	margin-top: 20px;
+	  	font-size: 2vw;
+	}
+
+	textarea {
+		height: 20vh;
+  		resize: vertical;
 	}
 
 	.email-container form{

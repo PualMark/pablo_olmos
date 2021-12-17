@@ -525,7 +525,7 @@
 
 		.skillset-container p{
 			text-align: center;
-			font-size: 100%;
+			font-size: 80%;
 		}
 
 
@@ -951,8 +951,8 @@
 		height: auto;
 		margin-top: 20px;
 		display: grid;
-	    justify-content: space-evenly;
-    	grid-template-columns: repeat(auto-fit, 30%);
+	    	justify-content: space-evenly;
+    		grid-template-columns: repeat(auto-fit, 30%);
     }
 
     .project section{
@@ -975,7 +975,6 @@
 
 	.skill:hover{
 		background-color: rgb(46, 139, 87, 0.5);
-		backface-visibility: ;
 	}
 
 	.skill img{

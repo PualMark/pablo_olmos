@@ -8,10 +8,10 @@ const projectData = [
 		git_link:'https://github.com/PualMark/anax_template'
 	},
 	{
-		image:'./img/portfolio/p01.png',
-		title:'Anax Olmos',
-		web_link:'https://pualmark.github.io/anax_template/',
-		git_link:'https://github.com/PualMark/anax_template'
+		image:'./img/portfolio/p02.png',
+		title:'Dr Smiles Template',
+		web_link:'https://pualmark.github.io/dr-smile-template',
+		git_link:'https://github.com/PualMark/dr-smile-template'
 	},
 ]
 
@@ -23,7 +23,7 @@ ${projectData.map(function(project){
 		<img class='project-img' src="${project.image}">
 		<section>
 			<p class='project-title'>${project.title}</p>
-			<a href="${project.web_link}" target="_blank"><i class="fas fa-globe"></i> Visitar Web</a>
+			<a href="${project.web_link}" target="_blank" class="web-link"><i class="fas fa-globe"></i> Visitar Web</a>
 		</section>
 		<a class='github' href='${project.git_link}' target='_blank'><i class="fab fa-github"></i></a>
 	</div>

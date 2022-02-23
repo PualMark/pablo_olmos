@@ -470,7 +470,7 @@
 		transition: all .4s;
 	}
 
-	.portfolio-container a{
+	.portfolio-container .web-link{
 		font-size: 3vw;
 		width: 30vw;
 		border-radius: 20px;
@@ -485,6 +485,8 @@
 	}
 
 	.project .github{
+		font-size: 6vw;
+		color: whitesmoke;
 		position: absolute;
 		top: 10px;
 		right: 10px;
@@ -923,7 +925,7 @@
 		font-size: 2.5vw;
 	}
 
-	.portfolio-container a{
+	.portfolio-container .web-link{
 		width: unset;
 		margin: 20px auto;
 		padding: 1px 10px;
@@ -931,12 +933,15 @@
 
 		transition: all .2s;
 	}
-
+	
+	.portfolio-container .github{
+		font-size: 1.5rem;
+	}
 	.portfolio-container i{
 		transition: all .2s;
 	}
 
-	.portfolio-container a:hover{
+	.portfolio-container .web-link:hover{
 		padding: 1px 14px;
 		border: solid var(--light-color);
 	}

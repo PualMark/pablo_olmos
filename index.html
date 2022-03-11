@@ -3,16 +3,16 @@
 <head>
 	<meta charset="utf-8">
 	<title>Pablo Olmos</title>
+	<link rel="icon" href="img/favicon.ico">
 	<link rel="stylesheet" href="css/main.css"/>
 	<link rel="script" href="js/main.js">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<script src="https://kit.fontawesome.com/c233adccbb.js" crossorigin="anonymous"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
@@ -43,7 +43,7 @@
 			</div>
 			<div class="about-text">
 				<p class="about-text-header">Pablo Olmos</p>
-				<content>¡Qué tal! Soy Pablo Olmos, desarrollador frontend y diseñador web. He estado en algunos proyectos dirigidos al diseño de vistas, así como la creación de sitios web. Actualmente me dedico a crear plantillas, conceptos y diseños, así como a la música tocando el piano.<br>Tengo experiencia con html5, css3, typescript y el framework, Angular.</content>
+				<content>¡Qué tal! Soy Pablo Olmos, desarrollador frontend y diseñador web. He estado en algunos proyectos dirigidos al diseño de vistas, así como la creación de sitios web. Actualmente me dedico a crear plantillas, conceptos y diseños.<br>Tengo experiencia con html5, css3, typescript y Angular.</content>
 			</div>
 		</div>
 		<div class="services-container">
@@ -72,7 +72,7 @@
 			</div>
 			<div class="skill">
 				<img src="img/skillset/js.png">
-				<p>Javascript</p>
+				<p>JS</p>
 			</div>
 			<div class="skill">
 				<img src="img/skillset/angular.png">
@@ -80,37 +80,32 @@
 			</div>
 			<div class="skill">
 				<img src="img/skillset/ts.png">
-				<p>Typescript</p>
+				<p>TS</p>
 			</div>
 		</figure>
 	</div>
 	<div class="contact-container" id="contact">
 		<h2>Contacto</h2>
-		<section class="form-container">
-  			<div class="email-container">
-	    		<form action="https://formspree.io/f/xrgrvaag" method="POST" id="my-form">
-
-      				<div class="form-group">
-        				<label for="firstName"> Nombre Completo </label>
-        				<input type="text" id="firstName" name="firstName">
-      				</div>
-
-      				<div class="form-group">
-        				<label for="email">E-mail</label>
-        				<input type="email" id="email" name="email">
-      				</div>
-
-      				<div class="form-group">
-        				<label for="massage">Mensaje</label>
-        				<textarea name="massage" id="massage" cols="20" rows="10"></textarea>
-      				</div>
-
-      				<button type="submit">Enviar</button>
-    			</form>
-  			</div>
-  			<div id="status"></div>
-		</section>
-		<script src="./js/main.js"></script>
+		<form action="https://formsubmit.co/contacto@pabloolmos.com" method="POST" class="contact-form" id="contact-form">
+			<input type="text" name="name" placeholder="Nombre" required class="form-name">
+			<input type="email" name="email" placeholder="Dirección Email" required class="form-email">
+			<input type="text" name="message" placeholder="Mensaje" required class="form-message">
+			<input type="hidden" name="_next" value="email.html">
+			<input type="hidden" name="_captcha" value="false">
+			<button type="submit">ENVIAR</button>
+		</form>
+		<div class="contact-card">
+			<div class="whatsapp">
+				<a href="https://api.whatsapp.com/send?phone=528125395567" target="_blank"><i class="fab fa-whatsapp"></i></a>
+				<p class="contact-datum">(+52) 8125395567</p>
+				<b class="contact-type">WhatsApp</b>
+			</div>
+			<div class="e-mail">
+				<a onclick="onLight()" class="email-icon"><i class="fas fa-at"></i></a>
+				<p class="contact-datum">contacto@pabloolmos.com</p>
+				<b class="contact-type">E-mail</b>
+			</div>
+		</div>
 	</div>
 </body>
 </html>

@@ -1,0 +1,58 @@
+:root{
+	--title-font: 'Ubuntu', sans-serif;
+	--subtitle-font: 'Roboto Mono', monospace;
+
+	--dark-color: #2F4F4F;
+	--light-color: #2E8B57;
+	--bg-color: #081c24;
+}	
+	
+	html{
+		overflow: hidden;
+	}
+
+	body {
+		background-image: unset;
+		background-color: var(--bg-color);
+		overflow-x: hidden;	
+	}
+
+	div{
+		width: 100vw;
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		color: whitesmoke;
+	}
+
+	h1{
+		text-align: center;
+		font-family: var(--title-font);
+		font-size: 7vw;
+		margin: 0 30px;
+	}
+
+	i{
+		width: 5em;
+	}
+
+	svg{
+		fill: whitesmoke;
+	}
+
+	a{	
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		font-family: var(--subtitle-font);
+		text-decoration: none;
+		color: whitesmoke;
+	}
+
+	p{
+		font-size: 3em;
+		margin: 0 30px;
+	}
